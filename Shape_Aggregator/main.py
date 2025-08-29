@@ -4,6 +4,7 @@ import sys
 from shapes import *
 import argparse
 
+
 def read_file(filename: str) -> list:
     """Read a JSON file and return its contents as a list.
 
@@ -58,8 +59,10 @@ def save_total_area(shapeList: list[Shape]) -> None:
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Calculate the total area of shapes.')
-    parser.add_argument('--file', type=str, required=True, help='Path to the JSON input file')
+    parser = argparse.ArgumentParser(description="Calculate the total area of shapes.")
+    parser.add_argument(
+        "--file", type=str, required=True, help="Path to the JSON input file"
+    )
     args = parser.parse_args()
 
     if not os.path.exists(args.file):
