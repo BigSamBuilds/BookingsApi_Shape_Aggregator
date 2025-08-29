@@ -1,0 +1,7 @@
+# Shape Aggregator – Coding Exercise
+
+## Objective
+The Shape Aggregator is a command-line interface (CLI) program developed in Python 3.10+ that reads a list of geometric shapes from a JSON file, computes their total area, and outputs the result to both the console and a file named `area.txt`. This exercise demonstrates the application of basic object-oriented programming principles, including inheritance and polymorphism, while emphasizing clean and maintainable Python code.
+
+## Implementation
+The program consists of an abstract base class `Shape` and concrete classes for each geometric shape: `Circle`, `Rectangle`, and `Triangle`, and `Square`. Each shape class implements the `area()` method, allowing for polymorphic behavior when calculating the total area without type checks. The CLI requires a mandatory flag `--file <path>` to specify the JSON input file, and it handles errors gracefully, such as missing files, invalid JSON, or unknown shape types. The output is formatted to display the total area with one decimal place and is also written to `area.txt`. The code adheres to PEP 8 standards, includes English docstrings for public methods, and allows for the addition of new shapes without modifying the existing code in `main.py`. Additionally, unit tests using `pytest` ensure the reliability of the implementation, and a feature to print a count of each shape type has been included as a bonus.
