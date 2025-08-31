@@ -45,14 +45,26 @@ def load_data(shape_list: list) -> list[Shape]:
 
 
 def save_total_area(shapeList: list[Shape]) -> None:
-    """Calculate and save the total area of the given shapes.
+    """Calculate and save the total area of the given shapes, and print shape counts and total area.
 
     Args:
         shapeList (list[Shape]): A list of shape instances.
     """
     total_area = sum(shape.area() for shape in shapeList)
 
+    count_per_shape = {}
+
+    # Count occurrences of each shape type
+    for shape in shapeList:
+        shape_name = type(shape).__name__.lower()
+        if shape_name in count_per_shape:
+            count_per_shape[shape_name] += 1
+        else:
+            count_per_shape[shape_name] = 1
+
     print(f"Total area: {total_area:.1f}")
+
+    print(f"Amount of shapes: {len(shapeList)},\nCount per shape: {count_per_shape}")
 
     with open("area.txt", "a") as writer:
         writer.write(f"{total_area:.1f}\n")

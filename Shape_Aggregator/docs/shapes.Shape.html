@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Python: module shapes.Shape</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <table class="heading">
+        <tr class="heading-text decor">
+            <td class="title">&nbsp;<br><strong class="title"><a href="shapes.html"
+                        class="white">shapes</a>.Shape</strong></td>
+            <td class="extra"><a href=".">index</a><br><a
+                    href="bookingsapi%5Cshape_aggregator%5Cshapes%5Cshape.py">bookingsapi\shape_aggregator\shapes\shape.py</a>
+            </td>
+        </tr>
+    </table>
+    <p></p>
+    <p>
+    <table class="section">
+        <tr class="decor index-decor heading-text">
+            <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td>
+        </tr>
+
+        <tr>
+            <td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+            <td>&nbsp;</td>
+            <td class="singlecolumn">
+                <dl>
+                    <dt class="heading-text"><a href="abc.html#ABC">abc.ABC</a>(<a
+                            href="builtins.html#object">builtins.object</a>)
+                    </dt>
+                    <dd>
+                        <dl>
+                            <dt class="heading-text"><a href="shapes.Shape.html#Shape">Shape</a>
+                            </dt>
+                        </dl>
+                    </dd>
+                </dl>
+                <p>
+                <table class="section">
+                    <tr class="decor title-decor heading-text">
+                        <td class="section-title" colspan=3>&nbsp;<br><a name="Shape">class
+                                <strong>Shape</strong></a>(<a href="abc.html#ABC">abc.ABC</a>)</td>
+                    </tr>
+
+                    <tr>
+                        <td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+                        <td class="decor title-decor" colspan=2><span
+                                class="code">Abstract&nbsp;base&nbsp;class&nbsp;for&nbsp;shapes.<br>&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="singlecolumn">
+                            <dl>
+                                <dt>Method resolution order:</dt>
+                                <dd><a href="shapes.Shape.html#Shape">Shape</a></dd>
+                                <dd><a href="abc.html#ABC">abc.ABC</a></dd>
+                                <dd><a href="builtins.html#object">builtins.object</a></dd>
+                            </dl>
+                            <hr>
+                            Methods defined here:<br>
+                            <dl>
+                                <dt><a name="Shape-area"><strong>area</strong></a>(self) -&gt; float</dt>
+                                <dd><span class="code">Calculate&nbsp;the&nbsp;area&nbsp;of&nbsp;the&nbsp;shape.<br>
+                                        &nbsp;<br>
+                                        Returns:<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;The&nbsp;area&nbsp;of&nbsp;the&nbsp;shape.</span>
+                                </dd>
+                            </dl>
+
+                            <hr>
+                            Class methods defined here:<br>
+                            <dl>
+                                <dt><a name="Shape-create_shape"><strong>create_shape</strong></a>(shape_type: str,
+                                    **kwargs)</dt>
+                                <dd><span
+                                        class="code">Create&nbsp;an&nbsp;instance&nbsp;of&nbsp;a&nbsp;registered&nbsp;shape.<br>
+                                        &nbsp;<br>
+                                        Args:<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;shape_type&nbsp;(str):&nbsp;The&nbsp;type&nbsp;of&nbsp;shape&nbsp;to&nbsp;create.<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;**kwargs:&nbsp;Additional&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;shape's&nbsp;constructor.<br>
+                                        &nbsp;<br>
+                                        Returns:<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<a
+                                            href="#Shape">Shape</a>:&nbsp;An&nbsp;instance&nbsp;of&nbsp;the&nbsp;requested&nbsp;shape.<br>
+                                        &nbsp;<br>
+                                        Raises:<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;If&nbsp;the&nbsp;shape&nbsp;type&nbsp;is&nbsp;not&nbsp;registered.</span>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt><a name="Shape-register_shape"><strong>register_shape</strong></a>()</dt>
+                                <dd><span
+                                        class="code">Register&nbsp;a&nbsp;shape&nbsp;class&nbsp;in&nbsp;the&nbsp;shape&nbsp;registry.<br>
+                                        &nbsp;<br>
+                                        This&nbsp;method&nbsp;adds&nbsp;the&nbsp;shape&nbsp;class&nbsp;to&nbsp;the&nbsp;registry&nbsp;using&nbsp;its<br>
+                                        lowercase&nbsp;name&nbsp;as&nbsp;the&nbsp;key.</span></dd>
+                            </dl>
+
+                            <hr>
+                            Data descriptors defined here:<br>
+                            <dl>
+                                <dt><strong>__dict__</strong></dt>
+                                <dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+                            </dl>
+                            <dl>
+                                <dt><strong>__weakref__</strong></dt>
+                                <dd><span
+                                        class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span>
+                                </dd>
+                            </dl>
+                            <hr>
+                            Data and other attributes defined here:<br>
+                            <dl>
+                                <dt><strong>__abstractmethods__</strong> = frozenset({'area'})
+                            </dl>
+
+                            <dl>
+                                <dt><strong>shape_registry</strong> = {'circle': &lt;class 'shapes.Circle.Circle'&gt;,
+                                    'rectangle': &lt;class 'shapes.Rectangle.Rectangle'&gt;, 'square': &lt;class
+                                    'shapes.Square.Square'&gt;, 'triangle': &lt;class 'shapes.Triangle.Triangle'&gt;}
+                            </dl>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
