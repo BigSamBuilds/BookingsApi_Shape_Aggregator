@@ -2,7 +2,7 @@ import pytest
 from shapes.Circle import Circle
 from shapes.Rectangle import Rectangle
 from shapes.Triangle import Triangle
-from main import load_data, saveTotalArea
+from main import load_data, save_total_area
 
 
 # Test for Circle area
@@ -48,6 +48,6 @@ def test_save_total_area(monkeypatch):
 
     shapes = [Circle(5), Rectangle(3, 4), Triangle(6, 2)]
 
-    saveTotalArea(shapes)
+    save_total_area(shapes)
 
     assert True
